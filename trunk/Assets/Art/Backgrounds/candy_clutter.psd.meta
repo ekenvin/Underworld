@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 65112c8e50936c8448005df0adf21236
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: candy_clutter_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 674
+        width: 146
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 543
+        width: 169
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_2
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 369
+        width: 542
+        height: 731
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 456
+        width: 151
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_4
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 540
+        width: 117
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_5
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 295
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_6
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 470
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_7
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 449
+        width: 59
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 269
+        width: 176
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 300
+        width: 142
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_10
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 188
+        width: 180
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: candy_clutter_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 157
+        width: 161
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_12
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 198
+        width: 154
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_13
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 41
+        width: 162
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: candy_clutter_14
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 64
+        width: 149
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
