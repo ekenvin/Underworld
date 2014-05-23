@@ -44,17 +44,6 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
-  - serializedVersion: 3
-    m_Name: shooting
-    m_StateMachine: {fileID: 110743267}
-    m_Mask: {fileID: 0}
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_StateMachineMotionSetIndex: 0
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
 --- !u!1101 &110100000
 Transition:
   m_ObjectHideFlags: 3
@@ -449,32 +438,4 @@ StateMachine:
       - {fileID: 110189087}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 768, y: -228, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
---- !u!1107 &110743267
-StateMachine:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: shooting
-  m_DefaultState: {fileID: 110245040}
-  m_States:
-  - {fileID: 110212218}
-  - {fileID: 110245040}
-  m_ChildStateMachine: []
-  m_ChildStateMachinePosition: []
-  m_OrderedTransitions:
-    data:
-      first: {fileID: 0}
-      second:
-      - {fileID: 110173729}
-    data:
-      first: {fileID: 110245040}
-      second: []
-    data:
-      first: {fileID: 110212218}
-      second:
-      - {fileID: 110112409}
-  m_MotionSetCount: 1
-  m_AnyStatePosition: {x: -156, y: -144, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
