@@ -4,7 +4,7 @@ using System.Collections;
 public class ChargeState : PlayerState {
 
 	public float attackImpulse=5000;
-	public float attackTime=0.4f;
+	public float attackTime=0.2f;
 
 	public ChargeState(PlayerControl _player):base(_player){
 		mPlayer=_player;

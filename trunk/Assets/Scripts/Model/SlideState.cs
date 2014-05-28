@@ -30,9 +30,17 @@ public class SlideState : PlayerState {
 	}
 	override public void handleInput(){
 		if(Input.GetButtonUp("Slide")){
-			Debug.Log("Exit slide state");
 			mPlayer.removeState(mPlayer.slideState);
 		}
 		
+	}
+
+	override public void handleUIInput(){
+		//UI and mobile input
+		Debug.Log(buttonStates["SlideBtn"]);
+		if(!buttonStates["SlideBtn"]){
+			//Debug.Log("Exit slide state");
+			mPlayer.removeState(mPlayer.slideState);
+		}
 	}
 }

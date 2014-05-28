@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: 9a51c345d0f455745924103faf7a968e
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Skele_SS_A1_Head
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 68
+        width: 74
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Skele_SS_A1_Torso
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 16
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Skele_SS_A1_RightArm
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 50
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Skele_SS_A1_LeftArm
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 31
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Skele_SS_A1_LeftLeg
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Skele_SS_A1_RightLeg
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

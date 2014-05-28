@@ -5,7 +5,7 @@ public class RunState : PlayerState {
 
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float origMoveForce;
-	public float maxSpeed = 50f;				// The fastest the player can travel in the x axis.
+	public float maxSpeed = 40f;				// The fastest the player can travel in the x axis.
 	public float origMaxSpeed;
 	public float acceleration=0.08f;
 	public bool attackEnabled;
@@ -32,6 +32,7 @@ public class RunState : PlayerState {
 		
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		mPlayer.anim.SetFloat("Speed", mPlayer.rigidbody2D.velocity.x);
+		mPlayer.anim.speed=mPlayer.rigidbody2D.velocity.x/10.0f;
 
 
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
@@ -66,6 +67,26 @@ public class RunState : PlayerState {
 		}
 
 		if(!Input.GetButton("Jump") && !Input.GetButton("Slide")){
+			attackEnabled=true;
+		}
+
+
+		
+		
+	}
+
+	override public void handleUIInput(){
+		//UI and mobile input
+		if(buttonStates["JumpBtn"] && buttonStates["SlideBtn"]){
+			mPlayer.addState(mPlayer.chargeState);
+			attackEnabled=false;
+		}
+		else if(buttonStates["JumpBtn"])
+			mPlayer.addState(mPlayer.jumpState);
+		else if(mPlayer.grounded && buttonStates["SlideBtn"])
+			mPlayer.addState(mPlayer.slideState);
+
+		if(!buttonStates["JumpBtn"] && !buttonStates["SlideBtn"]){
 			attackEnabled=true;
 		}
 	}

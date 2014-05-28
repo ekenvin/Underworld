@@ -15,6 +15,9 @@ public class PlayerControl : MonoBehaviour
 
 	private Level levelInfo;
 
+	public LevelInfoDisplay ui;
+	public bool receiveUIInput;
+
 	public List<PlayerState> mStates=new List<PlayerState>();
 	//one instance of each state
 	public RunState runState;
@@ -35,6 +38,10 @@ public class PlayerControl : MonoBehaviour
 		groundCheck = transform.Find("groundCheck");
 		anim = GetComponent<Animator>();
 		levelInfo=GameObject.FindGameObjectWithTag("LevelInfo").GetComponent<Level>();
+
+		ui.jumpBtn.onClicked=sendUIInputState;
+		ui.slideBtn.onClicked=sendUIInputState;
+
 		mStates.Add(runState);
 	}
 
@@ -60,8 +67,10 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		for(int i=0;i<mStates.Count;i++){
-			mStates[i].handleInput();
-
+			if(receiveUIInput)
+				mStates[i].handleUIInput();
+			else
+				mStates[i].handleInput();
 		}
 
 
@@ -76,7 +85,7 @@ public class PlayerControl : MonoBehaviour
 
 			grounded = newGrounded;
 		}
-		if(newGrounded){
+		if(newGrounded && !ui.jumpBtn.isDown){
 			//grounded events (remove jump and dive states)
 			removeState(jumpState);
 			removeState(diveState);
@@ -88,7 +97,6 @@ public class PlayerControl : MonoBehaviour
 	void FixedUpdate ()
 	{
 		for(int i=0;i<mStates.Count;i++){
-			Debug.Log(mStates[i].name);
 			mStates[i].update();
 		}
 	}
@@ -110,7 +118,12 @@ public class PlayerControl : MonoBehaviour
 	public void endCharge(){
 		removeState(chargeState);
 	}
-	
+
+	public void sendUIInputState(string btnName, bool b){
+		for(int i=0;i<mStates.Count;i++){
+			mStates[i].receiveUIInputState(btnName,b);
+		}
+	}
 
 	
 	public void Flip ()

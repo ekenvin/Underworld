@@ -77,9 +77,11 @@
      <None Include="Assets\ImportedAssets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\ImportedAssets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\ImportedAssets\VolumeLight\Read Me\Read Me.txt" />
+     <None Include="Assets\Art\Fonts\License - READ THIS.txt" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\ImportedAssets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Art\Fonts\SketchFonts.txt" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
