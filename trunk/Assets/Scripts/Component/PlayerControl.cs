@@ -17,6 +17,7 @@ public class PlayerControl : MonoBehaviour
 
 	public LevelInfoDisplay ui;
 	public bool receiveUIInput;
+	public bool frozen;
 
 	public List<PlayerState> mStates=new List<PlayerState>();
 	//one instance of each state
@@ -46,15 +47,17 @@ public class PlayerControl : MonoBehaviour
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
+
 		if(col.collider.gameObject.GetComponent<WorldObject>()!=null){
 			col.collider.gameObject.GetComponent<WorldObject>().onPlayerCollided(this);
 		}
-		else if(col.collider.gameObject.GetComponent<Enemy>()!=null){
-			if(mStates.Contains(chargeState)){
-
-			}
-			else{
-				die();
+		if(col.collider.gameObject.GetComponent<WorldObject>()==null && col.collider.gameObject.GetComponent<Enemy>()==null) {
+			//determine horizontal collision
+			foreach(ContactPoint2D contact in col.contacts){
+				float angleDiff=Vector2.Angle(transform.forward*-1,contact.normal);
+				if(contact.normal.x<-.8f){
+					die();		
+				}
 			}
 		}
 	}
@@ -67,10 +70,13 @@ public class PlayerControl : MonoBehaviour
 	void Update()
 	{
 		for(int i=0;i<mStates.Count;i++){
-			if(receiveUIInput)
-				mStates[i].handleUIInput();
-			else
-				mStates[i].handleInput();
+			if(!frozen){
+				if(receiveUIInput)
+					mStates[i].handleUIInput();
+				else
+					mStates[i].handleInput();
+			}
+
 		}
 
 
@@ -96,8 +102,10 @@ public class PlayerControl : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		for(int i=0;i<mStates.Count;i++){
-			mStates[i].update();
+		if(!frozen){
+			for(int i=0;i<mStates.Count;i++){
+				mStates[i].update();
+			}
 		}
 	}
 
@@ -113,6 +121,14 @@ public class PlayerControl : MonoBehaviour
 			_state.onExitState();
 			mStates.Remove(_state);
 		}
+	}
+
+	public void freeze(){
+		frozen=true;
+	}
+
+	public void unfreeze(){
+		frozen=false;
 	}
 
 	public void endCharge(){

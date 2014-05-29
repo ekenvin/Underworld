@@ -81,6 +81,7 @@
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\ImportedAssets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Art\Mats\LitSpriteShader.shader" />
      <None Include="Assets\Art\Fonts\SketchFonts.txt" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\ImportedAssets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />

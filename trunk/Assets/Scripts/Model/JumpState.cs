@@ -4,7 +4,7 @@ using System.Collections;
 public class JumpState : PlayerState {
 
 	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-	public float jumpForce = 780f;			// Amount of force added when the player jumps..
+	public float jumpForce = 950f;			// Amount of force added when the player jumps..
 
 	public JumpState(PlayerControl _player):base(_player){
 		mPlayer=_player;
